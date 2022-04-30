@@ -3,8 +3,6 @@ package br.com.cod3r.com.modelo;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.cod3r.com.excecao.ExplosaoException;
-
 public class Campo {
 	
 	private final int linha;
