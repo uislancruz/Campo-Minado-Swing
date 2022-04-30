@@ -55,7 +55,8 @@ public class Campo {
 			aberto = true;
 			
 			if (minado) {
-				throw new ExplosaoException();
+			// TODO implementar nova versão
+			// FIXME Erro
 			}
 			
 			if(vizinhancaSegura()) {
@@ -128,19 +129,7 @@ public class Campo {
 		marcado = false;
 	}
 	
-	public String toString() {
-		if(marcado) {
-			return "x";
-		}else if(aberto && minado) {
-			return "*";
-		}else if(aberto && minasNaVizinhaca() > 0) {
-			return Long.toString(minasNaVizinhaca());
-		}else if(aberto) {
-			return " ";
-		}else {
-			return "?";
-		}
-	}
+	
 
 }
 
